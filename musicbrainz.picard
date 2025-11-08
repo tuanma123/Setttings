@@ -1,3 +1,3 @@
 $if2(%albumartist%,%artist%)/%album% $if(%date%,\($left(%date%,4)\))
 
- [$upper(%_extension%)]/$if($gt(%totaldiscs%,1),Disc 0%discnumber%/,)0%tracknumber% - %title% 
+ [$upper(%_extension%)]/$if($gt(%totaldiscs%,1),Disc $pad(%discnumber%,2,0)/,)$pad(%discnumber%,2,0) - %title%
